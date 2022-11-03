@@ -24,14 +24,18 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi", "Bengali", "korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu", "Bengali","Marathi", "korean", "Chinese", "Japanese"),
 )
 if in_lang == "English":
     input_language = "en"
 elif in_lang == "Hindi":
     input_language = "hi"
+elif in_lang == "Urdu":
+    input_language = "ur"           
 elif in_lang == "Bengali":
     input_language = "bn"
+elif in_lang == "Marathi":
+    input_language = "mr"    
 elif in_lang == "korean":
     input_language = "ko"
 elif in_lang == "Chinese":
@@ -41,14 +45,18 @@ elif in_lang == "Japanese":
 
 out_lang = st.selectbox(
     "Select your output language",
-    ("English", "Hindi", "Bengali", "korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu","Bengali","Marathi","korean", "Chinese", "Japanese"),
 )
 if out_lang == "English":
     output_language = "en"
 elif out_lang == "Hindi":
     output_language = "hi"
+elif out_lang == "Urdu":
+    output_language = "ur"       
 elif out_lang == "Bengali":
     output_language = "bn"
+elif out_lang == "Marathi":
+    output_language = "mr"       
 elif out_lang == "korean":
     output_language = "ko"
 elif out_lang == "Chinese":
