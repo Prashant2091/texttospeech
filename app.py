@@ -18,7 +18,7 @@ try:
     os.mkdir("temp")
 except:
     pass
-st.title("Text to speech")
+st.title("Text to speech in different languages with proper listening voice")
 st.image("text-to-speech-converter.png")
 translator = Translator()
 
