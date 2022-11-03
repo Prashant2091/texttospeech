@@ -19,6 +19,7 @@ try:
 except:
     pass
 st.title("Text to speech")
+st.image("text-to-speech-converter.png")
 translator = Translator()
 
 text = st.text_input("Enter text")
