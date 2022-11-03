@@ -24,7 +24,7 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi","Urdu", "Bengali","Marathi", "korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu", "Bengali","Marathi","Punjabi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
 )
 if in_lang == "English":
     input_language = "en"
@@ -33,9 +33,23 @@ elif in_lang == "Hindi":
 elif in_lang == "Urdu":
     input_language = "ur"           
 elif in_lang == "Bengali":
-    input_language = "bn"
+    input_language = "bn"    
 elif in_lang == "Marathi":
-    input_language = "mr"    
+    input_language = "mr"
+elif in_lang == "Punjabi":
+    input_language = "pa"
+elif in_lang == "Kannada":
+    input_language = "kn"
+elif in_lang == "Sanskrit":
+    input_language = "sa"
+elif in_lang == "Gujrati":
+    input_language = "gu"
+elif in_lang == "Malyalam":
+    input_language = "ml" 
+elif in_lang == "Nepali":
+    input_language = "ne"
+elif in_lang == "Odia":
+    input_language = "or"   
 elif in_lang == "korean":
     input_language = "ko"
 elif in_lang == "Chinese":
@@ -45,7 +59,7 @@ elif in_lang == "Japanese":
 
 out_lang = st.selectbox(
     "Select your output language",
-    ("English", "Hindi","Urdu","Bengali","Marathi","korean", "Chinese", "Japanese"),
+   ("English", "Hindi","Urdu", "Bengali","Marathi","Punjabi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
 )
 if out_lang == "English":
     output_language = "en"
@@ -56,7 +70,21 @@ elif out_lang == "Urdu":
 elif out_lang == "Bengali":
     output_language = "bn"
 elif out_lang == "Marathi":
-    output_language = "mr"       
+    output_language = "mr"
+elif out_lang == "Punjabi":
+    output_language = "pa"
+elif out_lang == "Kannada":
+    output_language = "kn"
+elif out_lang == "Sanskrit":
+    output_language = "sa"
+elif out_lang == "Gujrati":
+   output_language = "gu"
+elif out_lang == "Malyalam":
+    output_language = "ml" 
+elif out_lang == "Nepali":
+    output_language = "ne"
+elif out_lang == "Odia": 
+    output_language = "or"
 elif out_lang == "korean":
     output_language = "ko"
 elif out_lang == "Chinese":
