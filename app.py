@@ -19,6 +19,8 @@ try:
 except:
     pass
 st.title("Text to speech in different languages with proper listening voice")
+st.text("**By Prashant Shukla**")
+st.text("Mail: **prashantjack.shukla@gmail.com**")
 st.image("text-to-speech-converter.png")
 translator = Translator()
 
