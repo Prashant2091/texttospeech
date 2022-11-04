@@ -55,7 +55,7 @@ elif in_lang == "Japanese":
     
 
 lang_dic = {"English":"en","Hindi":"hi","Urdu":"ur","Bengali":"bn","Marathi":"mr","Kannada":"kn","Gujarati":"gu",
-    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne,
+    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne",
     "French":"fr","German":"de","Greek":"el","Russian":"ru","korean":"ko","Chinese":"zh-cn","Japanese":"ja"}
     
 lang_code = lang_dic.get(in_lang)
@@ -92,7 +92,7 @@ elif out_lang == "Chinese":
 elif out_lang == "Japanese":
     output_language = "ja"'''
 lan_dic = {"English":"en","Hindi":"hi","Urdu":"ur","Bengali":"bn","Marathi":"mr","Kannada":"kn","Gujarati":"gu",
-    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne,
+    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne",
     "French":"fr","German":"de","Greek":"el","Russian":"ru","korean":"ko","Chinese":"zh-cn","Japanese":"ja"}
     
 lan_code = lan_dic.get(out_lang)
