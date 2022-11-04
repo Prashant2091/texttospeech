@@ -25,9 +25,10 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Nepali","korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Telgu","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
 )
-if in_lang == "English":
+
+'''if in_lang == "English":
     input_language = "en"
 elif in_lang == "Hindi":
     input_language = "hi"
@@ -50,13 +51,23 @@ elif in_lang == "korean":
 elif in_lang == "Chinese":
     input_language = "zh-cn"
 elif in_lang == "Japanese":
-    input_language = "ja"
+    input_language = "ja" '''
+    
+
+lang_dic = {"English":"en","Hindi":"hi","Urdu":"ur","Bengali":"bn","Marathi":"mr","Kannada":"kn","Gujarati":"gu",
+    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne,
+    "French":"fr","German":"de","Greek":"el","Russian":"ru","korean":"ko","Chinese":"zh-cn","Japanese":"ja"}
+    
+lang_code = lang_dic.get(in_lang)
+   
+    
+    
 
 out_lang = st.selectbox(
     "Select your output language",
-   ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Nepali","korean", "Chinese", "Japanese"),
+   ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Telgu","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
 )
-if out_lang == "English":
+'''if out_lang == "English":
     output_language = "en"
 elif out_lang == "Hindi":
     output_language = "hi"
@@ -79,8 +90,12 @@ elif out_lang == "korean":
 elif out_lang == "Chinese":
     output_language = "zh-cn"
 elif out_lang == "Japanese":
-    output_language = "ja"
-
+    output_language = "ja"'''
+lan_dic = {"English":"en","Hindi":"hi","Urdu":"ur","Bengali":"bn","Marathi":"mr","Kannada":"kn","Gujarati":"gu",
+    "Malayalam":"ml","Tamil":"ta","Telugu":"te","Nepali":"ne,
+    "French":"fr","German":"de","Greek":"el","Russian":"ru","korean":"ko","Chinese":"zh-cn","Japanese":"ja"}
+    
+lan_code = lan_dic.get(out_lang)
 english_accent = st.selectbox(
     "Select your english accent",
     (
