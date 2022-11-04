@@ -25,7 +25,7 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Telgu","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
 )
 
 if in_lang == "English":
@@ -45,9 +45,7 @@ elif in_lang == "Gujrati":
 elif in_lang == "Malyalam":
     input_language = "ml" 
 elif in_lang == "Tamil":
-    input_language = "ta" 
-elif in_lang == "Telugu":
-    input_language = "te"    
+    input_language = "ta"    
 elif in_lang == "Nepali":
     input_language = "ne"
 elif in_lang == "French":
@@ -70,7 +68,7 @@ elif in_lang == "Japanese":
 
 out_lang = st.selectbox(
     "Select your output language",
-   ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Telgu","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
+   ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Gujrati","Malyalam","Tamil","Nepali","French","German","Greek","Russian","korean", "Chinese", "Japanese"),
 )
 if out_lang == "English":
     output_language = "en"
@@ -90,8 +88,6 @@ elif out_lang == "Malyalam":
     output_language = "ml" 
 elif out_lang == "Tamil":
     output_language = "ta" 
-elif out_lang == "Telugu":
-    output_language = "te" 
 elif out_lang == "Nepali":
     output_language = "ne"
 elif out_lang == "French":
