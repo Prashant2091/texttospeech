@@ -25,7 +25,7 @@ translator = Translator()
 text = st.text_input("Enter text")
 in_lang = st.selectbox(
     "Select your input language",
-    ("English", "Hindi","Urdu", "Bengali","Marathi","Punjabi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
+    ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
 )
 if in_lang == "English":
     input_language = "en"
@@ -37,8 +37,6 @@ elif in_lang == "Bengali":
     input_language = "bn"    
 elif in_lang == "Marathi":
     input_language = "mr"
-elif in_lang == "Punjabi":
-    input_language = "pa"
 elif in_lang == "Kannada":
     input_language = "kn"
 elif in_lang == "Sanskrit":
@@ -60,7 +58,7 @@ elif in_lang == "Japanese":
 
 out_lang = st.selectbox(
     "Select your output language",
-   ("English", "Hindi","Urdu", "Bengali","Marathi","Punjabi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
+   ("English", "Hindi","Urdu", "Bengali","Marathi","Kannada","Sanskrit","Gujrati","Malyalam","Nepali","Odia","korean", "Chinese", "Japanese"),
 )
 if out_lang == "English":
     output_language = "en"
@@ -72,8 +70,6 @@ elif out_lang == "Bengali":
     output_language = "bn"
 elif out_lang == "Marathi":
     output_language = "mr"
-elif out_lang == "Punjabi":
-    output_language = "pa"
 elif out_lang == "Kannada":
     output_language = "kn"
 elif out_lang == "Sanskrit":
