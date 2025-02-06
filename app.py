@@ -143,7 +143,7 @@ def text_to_speech(input_language, output_language, text, tld):
     trans_text = translation.text
     tts = gTTS(trans_text, lang=output_language, tld=tld, slow=False)
     try:
-        my_file_name = text[0:20]
+        my_file_name = text[0:500]
     except:
         my_file_name = "audio"
     tts.save(f"temp/{my_file_name}.mp3")
@@ -175,5 +175,5 @@ def remove_files(n):
                 print("Deleted ", f)
 
 
-remove_files(7)
+remove_files(10)
 
